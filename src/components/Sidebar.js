@@ -1,10 +1,19 @@
 // components/Sidebar.js
+"use client";
+import { useRouter } from 'next/navigation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
+
 const Sidebar = ({children}) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/');
+  };
+
   return (
     <>
 
@@ -23,18 +32,22 @@ const Sidebar = ({children}) => {
         
         </div> */}
             <div className="flex flex-col w-64 h-screen bg-purple-900 text-white">
-      <div className="py-6 px-4 bg-purple-800 text-center text-xl font-bold">
+      <div className="py-6 px-4 bg-purple-800 text-center text-xl font-bold " >
+        <span className='cursor-pointer' onClick={handleClick}>
+
         Acmy Solutions
+        </span>
       </div>
-      <div className="flex flex-col items-start mt-8 px-4 space-y-2">
-        <div className="flex items-center bg-purple-700 justify-center text-gray-300 w-full h-12 py-2 px-4 rounded-full space-x-2">
+      <div className="flex flex-col items-start mt-8 px-4 space-y-2 cursor-pointer" onClick={handleClick}>
+        <div className="flex items-center bg-purple-700 justify-center text-gray-300 w-full h-12 py-2 px-4 rounded-full space-x-2 hover:bg-purple-300 hover:text-purple-600 transition-all">
           {/* <FontAwesomeIcon icon={faBell} width={12} /> */}
           <Image
             src="dashboard.svg"
             alt="Profile"
             width={24}
             height={24}
-            // className="rounded-full"
+         
+            className="hover:text-purple-600"
           />
           <span>Dashboard</span>
         </div>

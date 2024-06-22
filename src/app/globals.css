@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.status-container {
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.status-container .status-tooltip {
+  display: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.status-container:hover .status-tooltip {
+  display: block;
+  opacity: 1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.capitalize-first-letter::first-letter {
+  text-transform: uppercase;
+}
+
+.capitalize-first-letter {
+  text-transform: lowercase;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page-item {
+  margin: 0 0.25rem;
+}
+
+.page-link {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db; /* Gray-300 */
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #000; /* Black */
+}
+
+.page-link:hover {
+  background-color: #f3f4f6; /* Gray-100 */
+}
+
+.active .page-link {
+  color: #db2777; /* Pink-600 */
+  border-color: #db2777; /* Pink-600 */
 }

@@ -4,6 +4,7 @@ import TaskProvider from "@/context/TaskProvider";
 import Head from "next/head";
 import Navbar from "@/components/NavBar";
 import Sidebar from "@/components/Sidebar";
+import { isMobile } from "react-device-detect";
 
 const inter = Inter({ subsets: ["latin"] });
 
