@@ -1,5 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import TaskProvider from "@/context/TaskProvider";
+import Head from "next/head";
+import Navbar from "@/components/NavBar";
+import Sidebar from "@/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +15,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+       <TaskProvider>
+        <Navbar/>
+         {/* <Head>
+          <title>Dashboard</title>
+          <meta name="description" content="Dashboard" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head> */}
+        <Sidebar>
+
+        {children}
+        </Sidebar>
+        </TaskProvider>
+        </body>
+
     </html>
   );
 }
