@@ -1,36 +1,233 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Salary Calculator 2024 Q2
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This project is a web application built using Node.js, Next.js, TailwindCSS for styling, Jest for testing, Docker for containerization, GitHub Actions for continuous integration and deployment, and Vercel for hosting. The application is a salary calculator that helps users plan their finances effectively.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Online Hosted Site
+
+You can access the application online at [Salary Calculator 2024 Q2](https://salary-calculator-2024-q2-63777752.vercel.app/).
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed on your machine
+
+- Docker installed on your machine
+
+- Access to the terminal or command line
+
+- A GitHub account for accessing the repository (if needed)
+
+- A Vercel account (optional, if you want to deploy your own version)
+
+## Installation Guide
+
+### 1. Cloning the Repository
+
+First, clone the repository to your local machine:
+
+```sh
+
+git clone https://github.com/yourusername/salary-calculator-2024-q2-63777752.git
+
+cd salary-calculator-2024-q2-63777752
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Installing Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install the required dependencies using npm:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
 
-## Learn More
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Running the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can run the application in development mode using:
 
-## Deploy on Vercel
+```sh
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+
+This will start the development server and you can access the application at `http://localhost:3000`.
+
+### 4. Building the Application
+
+To build the application for production, use:
+
+```sh
+
+npm run build
+
+```
+
+### 5. Starting the Production Server
+
+After building the application, you can start the production server with:
+
+```sh
+
+npm start
+
+```
+
+### 6. Running Tests
+
+To run the tests, use:
+
+```sh
+
+npm test
+
+```
+
+### 7. Running the Application with Docker
+
+If you prefer to use Docker, you can pull the Docker image and run the application inside a container.
+
+#### Pulling the Docker Image
+
+Pull the Docker image from Docker Hub:
+
+```sh
+
+docker pull randimasilva/salary-calculator-2024-q2-63777752-image
+
+```
+
+#### Running the Docker Container
+
+Run the Docker container, mapping port 3000 on your host to port 3000 in the container:
+
+```sh
+
+docker run -p 3000:3000 randimasilva/salary-calculator-2024-q2-63777752-image
+
+```
+
+You can now access the application at `http://localhost:3000`.
+
+## Deployment
+
+### Deploying to Vercel
+
+To deploy the application to Vercel, follow these steps:
+
+1\. **Sign Up or Log In to Vercel**
+
+   If you don't already have an account, sign up at [vercel.com](https://vercel.com). If you have an account, log in.
+
+2\. **Import Project**
+
+   - Click on "New Project".
+
+   - Select the repository you want to deploy (ensure it is connected to your GitHub account).
+
+   - Follow the instructions to import the repository.
+
+3\. **Configure Build Settings**
+
+   Vercel should automatically detect the Next.js framework and configure the build settings. Ensure the following settings are correct:
+
+   - **Framework Preset**: Next.js
+
+   - **Build Command**: `npm run build`
+
+   - **Output Directory**: `.next`
+
+4\. **Deploy**
+
+   Click "Deploy" to start the deployment process. Once the deployment is complete, you will get a live URL for your application.
+
+## Project Structure
+
+The project structure is as follows:
+
+```
+
+salary-calculator-2024-q2-63777752/
+
+├── components/
+
+│   ├── TaskPriorityChart.tsx
+
+│   ├── TaskRow.tsx
+
+│   ├── TaskCard.tsx
+
+│   ├── Pagination.tsx
+
+│   └── Modal.tsx
+
+├── context/
+
+│   └── TaskContext.tsx
+
+├── pages/
+
+│   ├── api/
+
+│   ├── _app.tsx
+
+│   ├── index.tsx
+
+│   └── ...
+
+├── public/
+
+│   ├── images/
+
+│   └── ...
+
+├── styles/
+
+│   └── globals.css
+
+├── tests/
+
+│   └── ...
+
+├── .dockerignore
+
+├── .gitignore
+
+├── Dockerfile
+
+├── jest.config.js
+
+├── next.config.js
+
+├── package.json
+
+├── README.md
+
+└── tsconfig.json
+
+```
+
+## Technologies Used
+
+- **Node.js**: JavaScript runtime environment.
+
+- **Next.js**: React framework for building server-side rendered applications.
+
+- **TailwindCSS**: Utility-first CSS framework for styling.
+
+- **Jest**: JavaScript testing framework.
+
+- **Docker**: Platform for developing, shipping, and running applications in containers.
+
+- **GitHub Actions**: CI/CD tool for automating workflows.
+
+- **Vercel**: Platform for deploying static sites and serverless functions.
+
+## Conclusion
+
+This guide provides a comprehensive overview of the Salary Calculator 2024 Q2 project, including installation, running, and deployment instructions. For any issues or contributions, feel free to open an issue or pull request on the project's GitHub repository.
