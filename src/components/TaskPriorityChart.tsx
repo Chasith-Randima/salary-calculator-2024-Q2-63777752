@@ -23,7 +23,7 @@ ChartJS.register(
 );
 
 const TaskPriorityChart: React.FC = () => {
-  const { lowCount,mediumCount,highCount, } = useContext(TaskContext);
+  const { lowCount = 80,mediumCount = 60 ,highCount = 40 } = useContext(TaskContext);
 
   const data = {
     labels: [''],

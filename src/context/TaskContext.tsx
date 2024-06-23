@@ -48,9 +48,9 @@ interface TaskContextType {
   error: string | null;
   setError: React.Dispatch<React.SetStateAction<string | null>>;
   completeTask: (taskId: string) => void;
-  lowCount?: number;
-  mediumCount?: number;
-  highCount?: number;
+  lowCount?: number | undefined;
+  mediumCount?: number | undefined;
+  highCount?: number | undefined;
 }
 
 export const TaskContext = createContext<TaskContextType | undefined>(undefined);
