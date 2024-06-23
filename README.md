@@ -8,6 +8,8 @@ This project is a web application built using Node.js, Next.js, TailwindCSS for 
 
 You can access the application online at [Salary-Calculator-2024-Q2-63777752](https://salary-calculator-2024-q2-63777752.vercel.app/).(https://salary-calculator-2024-q2-63777752.vercel.app/)
 
+### When checking mobile responsiveness, if you are using a brower to check the responsiveness , please refresh the page once you set the dimentionality you want. Otherwise styling might not adjust automatically if you move from desktop view to mobile view directly
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
