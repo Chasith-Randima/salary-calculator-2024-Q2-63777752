@@ -1,0 +1,53 @@
+# version: "3.8"
+# services:
+#   frontend:
+#     container_name: salary-calculator-2024-Q2-63777752
+#     build:
+#       context: .  # Path to the Dockerfile directory (current directory)
+#       dockerfile: Dockerfile  # Name of your Dockerfile
+#     ports:
+#       - "3000:3000"  # Port mapping for the container (host:container)
+#     networks:
+#       - salary-calculator-2024-Q2-63777752-network  # Name of the network
+
+# networks:
+#   salary-calculator-2024-Q2-63777752-network :  # Define a custom bridge network
+
+
+
+
+
+
+
+
+
+
+version: "3.8"
+services:
+  # backend:
+  #   container_name: salary-calculator-2024-Q2-63777752
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #   ports:
+  #     - "3001:3001"
+  #   networks:
+  #     - my-network
+  #   volumes:
+  #     - backend-data:/app/backend/data
+
+  frontend:
+    container_name: salary-calculator-2024-Q2-63777752
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+
+# volumes:
+#   backend-data:
