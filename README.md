@@ -6,7 +6,7 @@ This project is a web application built using Node.js, Next.js, TailwindCSS for 
 
 ## Online Hosted Site
 
-You can access the application online at [Salary Calculator 2024 Q2](https://salary-calculator-2024-q2-63777752.vercel.app/).(https://salary-calculator-2024-q2-63777752.vercel.app/)
+You can access the application online at [Salary-Calculator-2024-Q2-63777752](https://salary-calculator-2024-q2-63777752.vercel.app/).(https://salary-calculator-2024-q2-63777752.vercel.app/)
 
 ## Prerequisites
 
