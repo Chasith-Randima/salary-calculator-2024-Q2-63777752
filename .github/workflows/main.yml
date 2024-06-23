@@ -1,0 +1,23 @@
+name: CI/CD Pipeline for salary-calculator-2024-Q2-63777752
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push frontend image
+        working-directory: .
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/salary-calculator-2024-Q2-63777752e-image .
+          docker push ${{ secrets.DOCKER_USERNAME }}/salary-calculator-2024-Q2-63777752-image
