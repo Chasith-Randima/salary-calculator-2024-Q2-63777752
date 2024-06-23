@@ -91,7 +91,7 @@ npm test
 
 ### 7. Running the Application with Docker
 
-#### Building Docker Image Locally
+#### Building Docker Container Locally
 
 First, clone the repository to your local machine:
 
