@@ -91,7 +91,27 @@ npm test
 
 ### 7. Running the Application with Docker
 
-If you prefer to use Docker, you can pull the Docker image and run the application inside a container.
+#### Building Docker Image Locally
+
+First, clone the repository to your local machine:
+
+```sh
+
+git clone https://github.com/Chasith-Randima/salary-calculator-2024-Q2-63777752.git
+
+cd salary-calculator-2024-q2-63777752
+
+```
+then run
+```sh
+
+docker compose up
+
+```
+Production server will start at http://127.0.0.1:3000
+(You need to have docker installed and running)
+
+If you prefer to use image in the docker hub, you can pull the Docker image and run the application inside a container.
 
 #### Pulling the Docker Image
 
