@@ -1,4 +1,4 @@
-# Salary Calculator 2024 Q2
+# Salary-Calculator-2024-Q2-63777752
 
 ## Introduction
 
@@ -6,7 +6,7 @@ This project is a web application built using Node.js, Next.js, TailwindCSS for 
 
 ## Online Hosted Site
 
-You can access the application online at [Salary Calculator 2024 Q2](https://salary-calculator-2024-q2-63777752.vercel.app/).
+You can access the application online at [Salary Calculator 2024 Q2](https://salary-calculator-2024-q2-63777752.vercel.app/).(https://salary-calculator-2024-q2-63777752.vercel.app/)
 
 ## Prerequisites
 
@@ -14,13 +14,12 @@ Before you begin, ensure you have met the following requirements:
 
 - Node.js and npm installed on your machine
 
-- Docker installed on your machine
-
 - Access to the terminal or command line
 
-- A GitHub account for accessing the repository (if needed)
+If you prefer Docker:
 
-- A Vercel account (optional, if you want to deploy your own version)
+- Docker installed on your machine
+
 
 ## Installation Guide
 
@@ -30,7 +29,7 @@ First, clone the repository to your local machine:
 
 ```sh
 
-git clone https://github.com/yourusername/salary-calculator-2024-q2-63777752.git
+git clone https://github.com/Chasith-Randima/salary-calculator-2024-Q2-63777752.git
 
 cd salary-calculator-2024-q2-63777752
 
@@ -114,37 +113,6 @@ docker run -p 3000:3000 randimasilva/salary-calculator-2024-q2-63777752-image
 
 You can now access the application at `http://localhost:3000`.
 
-## Deployment
-
-### Deploying to Vercel
-
-To deploy the application to Vercel, follow these steps:
-
-1\. **Sign Up or Log In to Vercel**
-
-   If you don't already have an account, sign up at [vercel.com](https://vercel.com). If you have an account, log in.
-
-2\. **Import Project**
-
-   - Click on "New Project".
-
-   - Select the repository you want to deploy (ensure it is connected to your GitHub account).
-
-   - Follow the instructions to import the repository.
-
-3\. **Configure Build Settings**
-
-   Vercel should automatically detect the Next.js framework and configure the build settings. Ensure the following settings are correct:
-
-   - **Framework Preset**: Next.js
-
-   - **Build Command**: `npm run build`
-
-   - **Output Directory**: `.next`
-
-4\. **Deploy**
-
-   Click "Deploy" to start the deployment process. Once the deployment is complete, you will get a live URL for your application.
 
 ## Project Structure
 
@@ -230,4 +198,4 @@ salary-calculator-2024-q2-63777752/
 
 ## Conclusion
 
-This guide provides a comprehensive overview of the Salary Calculator 2024 Q2 project, including installation, running, and deployment instructions. For any issues or contributions, feel free to open an issue or pull request on the project's GitHub repository.
+This guide provides a comprehensive overview of the Salary-Calculator-2024-Q2-63777752, including installation, running and running tests instructions. For any issues or contributions, feel free to open an issue or pull request on the project's GitHub repository.
